@@ -4,9 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="pluginAssets/katex/katex.css">
-	<script type="application/javascript" src="pluginAssets/mermaid/mermaid.min.js"></script>
-	<script type="application/javascript" src="pluginAssets/mermaid/mermaid_render.js"></script>
 	<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
 	<title>02 - Linux Distributions</title>
 </head>
@@ -76,7 +73,7 @@
 				word-wrap: break-word;
 				line-height: 1.6em;
 				background-color: #ffffff;
-				font-family: 'Avenir', 'Arial', sans-serif;
+				font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 				padding-bottom: 0px;
 				padding-top: 0px;
 			}
@@ -331,7 +328,7 @@
 				padding: .5em 1em .5em 1em;
 				font-size: 15;
 				color: #32373F;
-				font-family: 'Avenir', 'Arial', sans-serif;
+				font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 			}
 
 			.jop-tinymce table td,
@@ -484,6 +481,11 @@
 				overflow-x: auto;
 			}
 
+			.joplin-table-wrapper {
+				overflow-x: auto;
+				overflow-y: hidden;
+			}
+
 			/* =============================================== */
 			/* For TinyMCE */
 			/* =============================================== */
@@ -558,6 +560,10 @@
 				width: 640px;
 			}
 
+			pre.mermaid>svg {
+				white-space: unset;
+			}
+
 			.mermaid-export-graph {
 				opacity: 0;
 				height: 0;
@@ -585,17 +591,17 @@
 					</ul>
 				</li>
 				<li>Kernel manages time-sharing, multi-tasking, I/O, memory, power management and hardware devices<br>
-					<img src="./resources/cc324b73e39d414a8205f71df646ad5a.png"
-						alt="8c568b53296910551c27bbd613d1b9dc.png" width="253" height="200" class="jop-noMdConv" />
+					<img src="./resources/a228e1357e85414c9f28296df00a5df0.png"
+						alt="20f1a2580635f9565ba63493247fa51b.png">
 				</li>
 			</ul>
-			<p>A Full operating system needs more than jsut the kernel in order to be useful. Usually Linux Kernel is
-				compined with GNU Project utilities, tools, and libraries in order to create a fully functional OS. The
-				correct term for this is &quot;GNU/Linux&quot; indicating that OS contains Linux Kernel and GNU
+			<p>A Full operating system needs more than just the kernel in order to be useful. Usually, Linux Kernel is
+				combined with GNU Project utilities, tools, and libraries in order to create a fully functional OS. The
+				correct term for this is &quot;GNU/Linux&quot; indicating that the OS contains Linux Kernel and GNU
 				software.</p>
 			<h1 id="gnulinux-os-linux-distro">GNU/Linux OS (Linux Distro)</h1>
-			<p>A typical Operating System is made out of many software components. A GNU/Linux distribution is typically
-				a collection of the following:</p>
+			<p>A typical Operating System is made of many software components. A GNU/Linux distribution is typically a
+				collection of the following:</p>
 			<ul>
 				<li>Linux Kernel</li>
 				<li>GNU Tools and Libraries</li>
@@ -604,71 +610,49 @@
 				<li>Documentation</li>
 				<li>Additional software</li>
 			</ul>
-			<p>The support for a Linux-based distribution can be either commercially-backed, or community-backed.<br>
-				For more information you can review: <a data-from-md
+			<p>The support for a Linux-based distribution can be either commercially-backed or community-backed.<br>
+				For more information, you can review: <a data-from-md
 					title='https://en.wikipedia.org/wiki/Linux_distribution#'
 					href='https://en.wikipedia.org/wiki/Linux_distribution#'>https://en.wikipedia.org/wiki/Linux_distribution#</a><br>
-				To find out heritage of a specific distro, you may find it in this svg graphics: <a data-from-md
+				To find out the heritage of a specific distro, you may find it in this svg graphics: <a data-from-md
 					title='https://en.wikipedia.org/wiki/Linux_distribution#/media/File:2023_Linux_Distributions_Timeline.svg'
 					href='https://en.wikipedia.org/wiki/Linux_distribution#/media/File:2023_Linux_Distributions_Timeline.svg'>https://en.wikipedia.org/wiki/Linux_distribution#/media/File:2023_Linux_Distributions_Timeline.svg</a>
 			</p>
-			<h3 id="some-examples-of-commercially-backed-linux-distros">Some examples of commercially backed Linux
-				Distros:</h3>
+			<h1 id="some-examples-of-commercially-backed-linux-distros">Some examples of commercially backed Linux
+				Distros:</h1>
 			<ul>
-				<li>RedHat Enterprise Linux (IBM) (commercial license)
-					<ul>
-						<li>Fedora and Fedora Workstation variants are based on RedHat</li>
-						<li>Has strict rules regarding source-code access and distribution since purchused by IBM</li>
-						<li>Package Manager: YUM (Yellow Dog Updater, Modified), RPM (RedHat Package Manager) does not
-							support dependency resolution</li>
-					</ul>
-				</li>
-				<li>SUSE Enterprise Linux (commercial license)
-					<ul>
-						<li>Community and open version: OpenSuse variants</li>
-						<li>Package Manager: Zypper</li>
-						<li>Suse has a GUI and TUI &quot;Control panel&quot; called YaST which can be used to configure
-							many aspects of the OS, including managing repositories and software</li>
-					</ul>
-				</li>
-				<li>Ubuntu (Conanical Ltd.)
-					<ul>
-						<li>Based on Debian</li>
-						<li>contains free software and proprietary device drivers</li>
-						<li>Free to use, paid enterprise support is available from Conanical Ltd.</li>
-						<li>Package Managers: dpkg (apt and apt-get as front), snap, flatpak (optional)</li>
-					</ul>
-				</li>
+				<li>RedHat Enterprise Linux (IBM) (commercial license)<br>
+					- Fedora and Fedora Workstation variants are based on RedHat<br>
+					- Has strict rules regarding source-code access and distribution since purchased by IBM<br>
+					- Package Manager: YUM (Yellow Dog Updater, Modified), RPM (RedHat Package Manager) do not support
+					dependency resolution</li>
+				<li>SUSE Enterprise Linux (commercial license)<br>
+					- Community and open version: OpenSuse variants<br>
+					- Package Manager: Zypper<br>
+					- Suse has a GUI and TUI &quot;Control panel&quot; called YaST which can be used to configure many
+					aspects of the OS, including managing repositories and software</li>
+				<li>Ubuntu (Canonical Ltd.)<br>
+					- Based on Debian<br>
+					- contains free software and proprietary device drivers<br>
+					- Free-to-use, paid enterprise support is available from Canonical Ltd.<br>
+					- Package Managers: dpkg (apt and apt-get as front), snap, flatpak (optional)</li>
 			</ul>
-			<h3 id="some-examples-of-community-backed-linux-distros">Some examples of Community-backed Linux Distros:
-			</h3>
+			<h1 id="some-examples-of-community-backed-linux-distros">Some examples of Community-backed Linux Distros:
+			</h1>
 			<ul>
-				<li>Debian (the Debian Project)
-					<ul>
-						<li>Entirely free and open-source</li>
-						<li>Most popular, and many other distros (such as Ubuntu) are based on Debian</li>
-						<li>Package Managers: Debian Package Manager - dpkg (apt and apt-get as front), others
-							(optional)</li>
-					</ul>
-				</li>
-				<li>Arch Linux
-					<ul>
-						<li>Free, but NOT endorsed by GNU (kernel contains non-free and proprietary components)
-							<ul>
-								<li>Not suitable for business or enterprise use</li>
-							</ul>
-						</li>
-						<li>Package Manager: pacman package manager</li>
-					</ul>
-				</li>
-				<li>Gentoo Linux
-					<ul>
-						<li>Free software</li>
-						<li>Compiled entirely from source code, can be configured to be specifically compile for the
-							hardware to ensure maximum performance, but also more difficult to setup and configure</li>
-						<li>Package manager: Portage</li>
-					</ul>
-				</li>
+				<li>Debian (the Debian Project)<br>
+					- Entirely free and open-source<br>
+					- Most popular, and many other distros (such as Ubuntu) are based on Debian<br>
+					- Package Managers: Debian Package Manager - dpkg (apt and apt-get as front), others (optional)</li>
+				<li>Arch Linux<br>
+					- Free, but NOT endorsed by GNU (kernel contains non-free and proprietary components)<br>
+					- Not suitable for business or enterprise use<br>
+					- Package Manager: pacman package manager</li>
+				<li>Gentoo Linux<br>
+					- Free software<br>
+					- Compiled entirely from source code, can be configured to be specifically compiled for the hardware
+					to ensure maximum performance, but also more difficult to setup and configure<br>
+					- Package manager: Portage</li>
 			</ul>
 		</div>
 	</div>

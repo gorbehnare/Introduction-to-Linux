@@ -4,9 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="pluginAssets/katex/katex.css">
-	<script type="application/javascript" src="pluginAssets/mermaid/mermaid.min.js"></script>
-	<script type="application/javascript" src="pluginAssets/mermaid/mermaid_render.js"></script>
 	<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
 	<title>01 - Quick History of Unix and Linux</title>
 </head>
@@ -76,7 +73,7 @@
 				word-wrap: break-word;
 				line-height: 1.6em;
 				background-color: #ffffff;
-				font-family: 'Avenir', 'Arial', sans-serif;
+				font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 				padding-bottom: 0px;
 				padding-top: 0px;
 			}
@@ -331,7 +328,7 @@
 				padding: .5em 1em .5em 1em;
 				font-size: 15;
 				color: #32373F;
-				font-family: 'Avenir', 'Arial', sans-serif;
+				font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 			}
 
 			.jop-tinymce table td,
@@ -484,6 +481,11 @@
 				overflow-x: auto;
 			}
 
+			.joplin-table-wrapper {
+				overflow-x: auto;
+				overflow-y: hidden;
+			}
+
 			/* =============================================== */
 			/* For TinyMCE */
 			/* =============================================== */
@@ -558,6 +560,10 @@
 				width: 640px;
 			}
 
+			pre.mermaid>svg {
+				white-space: unset;
+			}
+
 			.mermaid-export-graph {
 				opacity: 0;
 				height: 0;
@@ -617,10 +623,10 @@
 				series. These computers were not sophisticated and did not have a lot of resources. The OS could not
 				have been sophisticated or complex, because the hardware was not capable of running too complex of an
 				OS.<br>
-				Unix is so simple that the simplicity has enabled it to stand the test of time for decades, and the
-				concepts and ideas are still in use and completely relevant in our current computing environments today.
-				If you have an ideas such as &quot;Linux/Unix is hard&quot;, or &quot;Linux/Unix is complicated&quot;,
-				this is due to a lack of information and is certainly not true.</p>
+				The simplicity of Unix has enabled it to stand the test of time for decades, and the concepts and ideas
+				are still in use and completely relevant in our current computing environment. If you have thoughts such
+				as &quot;Linux/Unix is hard&quot;, or &quot;Linux/Unix is complicated&quot;, this is due to a lack of
+				information and is certainly not true.</p>
 			<h2 id="unix-features">Unix Features</h2>
 			<ul>
 				<li>Multi-user environment
@@ -633,13 +639,13 @@
 				<li>Networking (envisioned as OS for remote-access, time-shared machines)</li>
 			</ul>
 			<h2 id="unix-drawback-and-small-install-base">Unix Drawback and Small Install-base</h2>
-			<p>The drawbacks of Unix-based OS are not technical based, but rather has to do be commercialization and
-				complex licensing. Since the OS was created in a commercial environment, the terms or use and licensing
-				has been subjects of many lawsuits and controversies over the years. In my opinion, commercial interest
-				has played a majour role in having Unix not be adopted as widely as MS-DOS and other operating
-				systems.<br>
+			<p>The drawbacks of Unix-based OS are not technical-based but rather have to do with commercialization and
+				complex licensing. Since the OS was created in a commercial environment, the terms of use and licensing
+				have been the subjects of many lawsuits and controversies over the years. In my opinion, commercial
+				interest has played a major role in having Unix not being adopted as widely as MS-DOS and other
+				operating systems.<br>
 				Unix-based OS exist today and are in use in various forms, such as &quot;BSD&quot; licensed versions
-				(FreeBSD, and NetBSD), as well as commercial versions (such as HP-Unix).</p>
+				(FreeBSD, and NetBSD), as well as commercial versions (such as HP-Unix). MacOS is based on Unix.</p>
 			<h1 id="gnu-project-and-free-software-foundation">GNU Project and Free Software Foundation</h1>
 			<p>Due to frustrations stemming from the commercialization, issues around licensing, and controversies
 				surrounding copyright for software, a philosophy of &quot;free software&quot; was formed around academia
@@ -652,10 +658,10 @@
 				<li>The freedom to distribute copies of your modified versions to others</li>
 			</ul>
 			<h2 id="gnu-project-and-fsf">GNU Project and FSF</h2>
-			<p>Richard Stallman was a software developer who worked at MIT Artificial Intelligence Lab in 1971. However
-				he had some negative experiences with proprietary software, such as the code that he wanted to work on
-				or fix was locked up. This has seemingly lead to his profound hostility towards proprietary software and
-				Intellectual Property.</p>
+			<p>Richard Stallman was a software developer who worked at MIT Artificial Intelligence Lab in 1971. However,
+				he had some negative experiences with proprietary software, as the code that he wanted to work on or fix
+				was locked up with licensing issues. This has seemingly led to his profound hostility towards
+				proprietary software and Intellectual Property.</p>
 			<ul>
 				<li>Richard Stallman launched the GNU Project in 1983
 					<ul>
@@ -672,7 +678,8 @@
 							<ul>
 								<li>This also includes the C-Compiler and debuggers required for development work</li>
 								<li>Utilities have the same name and function as Unix utilities</li>
-								<li>The Kernel is called Hurd, but development is stalled and product is unfinished</li>
+								<li>The Kernel developed by GNU is called Hurd, but development is stalled and the
+									product is unfinished</li>
 							</ul>
 						</li>
 					</ul>
@@ -708,13 +715,13 @@
 			<h2 id="the-gnulinux-os">The GNU/Linux OS</h2>
 			<p>Linux is only the kernel and does not contain any utilities or user programs.</p>
 			<ul>
-				<li>Kernel is the code that manages the hardware, for example, contains drivers that know how to
+				<li>Kernel is the code that manages the hardware, for example, it contains drivers that know how to
 					communicate and utilize the underlying hardware</li>
 				<li>Kernel also &quot;abstracts&quot; hardware from software, creating a layered architecture.
 					<ul>
 						<li>This means that software becomes &quot;portable&quot; since it is not specifically written
-							for specific hardware. As long as the Kernel is running, the software will theoretically
-							work on any hardware</li>
+							for specific hardware. As long as the Kernel is running, theoretically, any software written
+							for the kernel will work on any hardware</li>
 					</ul>
 				</li>
 			</ul>
@@ -726,6 +733,10 @@
 				kernel since the project was moving much faster.</p>
 			<p>For more information see: <a data-from-md title='https://www.gnu.org/home.en.html'
 					href='https://www.gnu.org/home.en.html'>https://www.gnu.org/home.en.html</a></p>
+			<hr>
+			<p>Github Main Page: <a data-from-md title='https://gorbehnare.github.io/Introduction-to-Linux/'
+					href='https://gorbehnare.github.io/Introduction-to-Linux/'>https://gorbehnare.github.io/Introduction-to-Linux/</a>
+			</p>
 		</div>
 	</div>
 </body>

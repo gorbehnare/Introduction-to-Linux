@@ -4,9 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="pluginAssets/katex/katex.css">
-	<script type="application/javascript" src="pluginAssets/mermaid/mermaid.min.js"></script>
-	<script type="application/javascript" src="pluginAssets/mermaid/mermaid_render.js"></script>
 	<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
 	<title>03 - Shell, Console, and Terminal</title>
 </head>
@@ -76,7 +73,7 @@
 				word-wrap: break-word;
 				line-height: 1.6em;
 				background-color: #ffffff;
-				font-family: 'Avenir', 'Arial', sans-serif;
+				font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 				padding-bottom: 0px;
 				padding-top: 0px;
 			}
@@ -331,7 +328,7 @@
 				padding: .5em 1em .5em 1em;
 				font-size: 15;
 				color: #32373F;
-				font-family: 'Avenir', 'Arial', sans-serif;
+				font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 			}
 
 			.jop-tinymce table td,
@@ -484,6 +481,11 @@
 				overflow-x: auto;
 			}
 
+			.joplin-table-wrapper {
+				overflow-x: auto;
+				overflow-y: hidden;
+			}
+
 			/* =============================================== */
 			/* For TinyMCE */
 			/* =============================================== */
@@ -558,6 +560,10 @@
 				width: 640px;
 			}
 
+			pre.mermaid>svg {
+				white-space: unset;
+			}
+
 			.mermaid-export-graph {
 				opacity: 0;
 				height: 0;
@@ -588,14 +594,14 @@
 						<li>When the user quits the login shell (or ends the program), the user is logged out</li>
 						<li>If an administrator terminates a user's login shell the user will get kicked out of the
 							system<br>
-							Example of Shell programs: bash, sh, csh, kshn, zsh, fish</li>
+							Examples of Shell programs: bash, sh, csh, kshn, zsh, fish</li>
 					</ul>
 				</li>
 			</ul>
 			<h1 id="terminal">terminal</h1>
-			<p>Terminal is text input and output. Many devices provide terminal for diagnostics or as a way to provide
-				access to shell.<br>
-				Original terminals were &quot;teletype writer&quot; devices and in Unix and Linux the basic terminal is
+			<p>The terminal is text input and output. Many devices provide a terminal for diagnostics or as a way to
+				provide shell access.<br>
+				Original terminals were &quot;teletypewriter&quot; devices and in Unix and Linux the basic terminal is
 				called &quot;TTY&quot;.</p>
 			<img src="./resources/dad23c08328347d5bfa8e8d1424ec507.png" alt="58415d1ebcce2ababd13129bb5bf7f76.png"
 				width="601" height="400" class="jop-noMdConv" />
@@ -605,21 +611,22 @@
 				“… This particular machine was used by a furniture store to order stock…” For a demo see: <a
 					data-from-md title='https://youtu.be/OVdoU-BqFHY'
 					href='https://youtu.be/OVdoU-BqFHY'>https://youtu.be/OVdoU-BqFHY</a></p>
-			<p>In current version of software, terminal is a software version that is being sent to display, serial
-				port, or network. Here is an example of software tty being displayed on a monitor:<br>
-				<img src="./resources/40d23ae9a42442d482867718bb4cc53d.png" alt="ecf024441413a6e6070b0906f92ef856.png">
+			<p>In the current version of the software, a terminal is a software version that is being sent to display,
+				serial port, or network. Here is an example of software tty being displayed on a monitor:<br>
+				<img src="./resources/40d23ae9a42442d482867718bb4cc53d.png"
+					alt="ecf024441413a6e6070b0906f92ef856.png">
 			</p>
-			<p>Additionally accessing terminal on some devices may require additional hardware (console) and software
-				(terminal emulator). Example of terminal emulator software includes MobaXterm, PuTTY, and Terminus.</p>
+			<p>Additionally accessing terminals on some devices may require additional hardware (console) and software
+				(terminal emulator). Examples of terminal emulator software include MobaXterm, PuTTY, and Terminus.</p>
 			<h2 id="terminal-types">Terminal types</h2>
-			<p>Local terminals include keyboard and screen or console device such as serial port, or other management
+			<p>Local terminals include keyboard and screen or console devices such as serial ports, or other management
 				hardware. Local terminals usually require local access to the hardware.</p>
-			<p>Remote Terminals use network protocols to send and recieve text input/output. Examples include Telnet,
-				rlogin, and SSH. Remote terminals are known to a system as virtual (vty) or pseudo-terminals (pty)
+			<p>Remote Terminals use network protocols to send and receive text input/output. Examples include Telnet,
+				rlogin, and SSH. Remote terminals are known to a system as virtual (vty) or pseudo-terminal (pty)
 				devices.<br>
 				Please note that telnet and rlogin are unencrypted and transmitted in plain text. These protocols should
 				not be enabled and used over most networks. The most prevalent (and recommended) protocol for remote
-				terminal on Linux and Unix systems is SSH (secure shell protocol).</p>
+				terminals on Linux and Unix systems is SSH (secure shell protocol).</p>
 			<h3 id="ssh-features">SSH features:</h3>
 			<ul>
 				<li>Encrypted (RSA-Like encryption)</li>
@@ -630,7 +637,7 @@
 			<p>Since Linux and Unix are multi-user, multiple sessions and multiple users can connect to and use one
 				system at the same time.</p>
 			<h1 id="console">Console</h1>
-			<p>Traditionally consoles refer to keyboard and screen hardware. Console is the hardware device, and
+			<p>Traditionally consoles refer to keyboard and screen hardware. The console is the hardware device, and the
 				terminal is the text displayed in the console.</p>
 			<img src="./resources/c88772405cee4a9eba34914fc0ac1c77.png" alt="2eba353b2a002700a23ca862c4a214b3.png"
 				width="451" height="400" class="jop-noMdConv" />
@@ -639,17 +646,21 @@
 					href='https://commons.wikimedia.org/w/index.php?curid=29457452'>https://commons.wikimedia.org/w/index.php?curid=29457452</a><br>
 				DEC VT100 terminal at the Living Computer Museum connected to the museum's DEC PDP-11/70</p>
 			<p>Many terminal emulators can emulate the behaviour or properties of various consoles in software. For
-				example VT100 only displays black and white text on CRT, while xterm256 offers choices of 256 colours
+				example, VT100 only displays black and white text on CRT, while xterm256 offers choices of 256 colours
 				for text and text background.</p>
-			<p>In modern terminology in datacenter and enterprise environments, a console is a computer that provides
-				access to terminal of other systems. Typically these computers run a desktop OS and are used for
-				managing other system. For example a Hitachi SAN Storage device and an HPE NonStop mainframes contain
-				one or more computers running Windows Desktop that have the required management software for the device
-				installed, for a locally present and authorized technician to diagnose, maintain, manage, or repair the
-				attached systems.</p>
+			<p>In modern terminology in data centers and enterprise environments, a console is a computer that provides
+				access to the terminal of other systems. Typically these computers run a desktop OS and are used for
+				managing another system. For example, a Hitachi SAN Storage device and an HPE NonStop mainframe contain
+				one or more computers running Windows Desktop that have the required management software for the devices
+				installed, so a locally present and authorized technician can use the console to diagnose, maintain,
+				manage, or repair the attached systems.</p>
 			<img src="./resources/10fb4d12500e4014b786bcfb8dda4d6e.png" alt="9f2758c27010221847893aecd484394c.png"
 				width="506" height="400" class="jop-noMdConv" />
-			<p>Above image: Example of a technician accessing console on a HPE 3PAR SAN storage system</p>
+			<p>Above image: Example of a technician accessing console on an HPE 3PAR SAN storage system</p>
+			<hr>
+			<p>Github Main Page: <a data-from-md title='https://gorbehnare.github.io/Introduction-to-Linux/'
+					href='https://gorbehnare.github.io/Introduction-to-Linux/'>https://gorbehnare.github.io/Introduction-to-Linux/</a>
+			</p>
 		</div>
 	</div>
 </body>
