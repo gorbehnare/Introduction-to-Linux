@@ -8,3 +8,4 @@ Table of Content:
 - [03 - Shell, Console, and Terminal.html](./03%20-%20Shell,%20Console,%20and%20Terminal.html)
 - [04 - CLI Basics.html](./04%20-%20CLI%20Basics.html)
 - [05 - Exploring Hardware.html](./05%20-%20Exploring%20Hardware.html)
+- [06 - NIC Configuration.html](./06%20-%20NIC%20Configuration.html)
