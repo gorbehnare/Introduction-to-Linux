@@ -11,4 +11,4 @@ Table of Content:
 - [06 - NIC Configuration.html](./06%20-%20NIC%20Configuration.html)
 
 Assignments:
-- [Assignment 1 - Installing Linux](./Assignments/Assignment%201%20-%20Installing%20Linux.html)
+- [Assignment 1 - Installing Linux](Assignments/Assignment%201%20-%20Installing%20Linux.html)
