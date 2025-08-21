@@ -14,3 +14,5 @@ Table of Content:
 Assignments:
 - [Assignment 1 - Installing Linux](Assignments/Assignment%201%20-%20Installing%20Linux.html)
 - [Assignment 2 - The Command Line Interface](Assignments/Assignment%202%20-%20The%20Command%20Line%20Interface.html)
+- [Assignment 3 - Configuring NIC](Assignments/Assignment%203%20-%20Configuring%20NIC.html)
+
