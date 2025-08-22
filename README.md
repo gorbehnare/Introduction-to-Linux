@@ -10,6 +10,11 @@ Table of Content:
 - [05 - Exploring Hardware](./05%20-%20Exploring%20Hardware.html)
 - [06 - NIC Configuration](./06%20-%20NIC%20Configuration.html)
 - [07 - Software Management](./07%20-%20Software%20Management.html)
+- 08 - User Accounts and Groups
+- 09 - Linux Admin Utilities and (Legacy) System Run Levels
+- 10 - Popular Linux Software Packaging Formats
+- 11 - Scripting
+- 12 - Desktop Environment and GUI
 
 Assignments:
 - [Assignment 1 - Installing Linux](Assignments/Assignment%201%20-%20Installing%20Linux.html)
