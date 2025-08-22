@@ -17,7 +17,7 @@ Assignments:
 - [Assignment 3 - Configuring NIC](Assignments/Assignment%203%20-%20Configuring%20NIC.html)
 - [Assignment 4 - Adding storage](Assignments/Assignment%204%20-%20Adding%20storage.html)
 - [Assignment 5 - Installing MySQL](Assignments/Assignment%205%20-%20Installing%20MySQL.html)
-- [Assignment 6 - User Accounts and Groups]()
+- [Assignment 6 - User Accounts and Groups](Assignments/Assignment%206%20-%20User%20accounts%20and%20groups.html)
 - [Assignment 7 - Implementing SSH RSA Key Authentication]()
 - [Assignment 8 - Examine and Install Pi-Hole]()
 - [Assignment 9 - Creating Script File for Automation]()
