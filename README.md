@@ -16,3 +16,8 @@ Assignments:
 - [Assignment 2 - The Command Line Interface](Assignments/Assignment%202%20-%20The%20Command%20Line%20Interface.html)
 - [Assignment 3 - Configuring NIC](Assignments/Assignment%203%20-%20Configuring%20NIC.html)
 - [Assignment 4 - Adding storage](Assignments/Assignment%204%20-%20Adding%20storage.html)
+- [Assignment 5 - Installing MySQL]()
+- [Assignment 6 - User Accounts and Groups]()
+- [Assignment 7 - Implementing SSH RSA Key Authentication]()
+- [Assignment 8 - Examine and Install Pi-Hole]()
+- [Assignment 9 - Creating Script File for Automation]()
