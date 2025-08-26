@@ -25,4 +25,4 @@ Assignments:
 - [Assignment 6 - User Accounts and Groups](Assignments/Assignment%206%20-%20User%20accounts%20and%20groups.html)
 - [Assignment 7 - Implementing SSH RSA Key Authentication](Assignments/Assignment%207%20-%20Implementing%20SSH%20RSA%20Key%20Authentication.html)
 - [Assignment 8 - Examining and installing Pi-hole](Assignments/Assignment%208%20-%20Examining%20and%20installing%20Pi-hole)
-- [Assignment 9 - Creating Script File for Automation]()
+- [Assignment 9 - Creating Script File for Automation](Assignments/Assignment%209%20-%20Creating%20A%20Script%20File%20For%20Automation.html)
