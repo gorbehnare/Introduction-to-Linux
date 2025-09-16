@@ -10,7 +10,7 @@ Table of Content:
 - [05 - Exploring Hardware](./05%20-%20Exploring%20Hardware.html)
 - [06 - NIC Configuration](./06%20-%20NIC%20Configuration.html)
 - [07 - Software Management](./07%20-%20Software%20Management.html)
-- 08 - User Accounts and Groups
+- [08 - User Accounts and Groups](./08%20-%20Users%20and%20Groups.html)
 - 09 - Linux Admin Utilities and (Legacy) System Run Levels
 - 10 - Popular Linux Software Packaging Formats
 - 11 - Scripting
