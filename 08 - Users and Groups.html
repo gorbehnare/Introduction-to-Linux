@@ -689,6 +689,38 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 </ul>
 </li>
 </ul>
+<h1 id="security-and-monitoring">Security and Monitoring</h1>
+<p>You have access to simple utilities such as:</p>
+<ul>
+<li><code class="inline-code">id</code>: print real and effective user and group IDs</li>
+<li><code class="inline-code">who</code>: show who is logged on (and on which terminal)</li>
+<li><code class="inline-code">w</code>: Show who is logged on and what they are doing (what applications and sessions they are running)</li>
+<li><code class="inline-code">last</code>: legacy tools on systems with <code class="inline-code">sysvinit</code> and <code class="inline-code">sysvinit-utilities</code> installed. Provides a chronological view of user sessions (last logged-in users)</li>
+</ul>
+<h2 id="user-account-best-practices">User Account Best Practices</h2>
+<ul>
+<li>Disable the <code class="inline-code">root</code> account. This is done by default in Ubuntu, so you cannot log in as <code class="inline-code">root</code>.</li>
+<li>Create and manage system and user accounts and use the &quot;principle of least privilege&quot;
+<ul>
+<li>Never run services and applications (especially when exposed to the network or the internet) as root, create a system account and run the service as that user account</li>
+<li>Give the accounts the minimum required access to any resources (for example, system accounts are locked, cannot log in or do not have excessive read, write, or execute permissions on a system)</li>
+<li>Having segregated user accounts allows you to manage, control, and audit access (who did what and when, and what they are allowed to access)</li>
+<li>In multi-user systems, think about default permissions, for example, who gets <code class="inline-code">sudo</code> access, and what defaults to set for users&apos; <code class="inline-code">/home</code> directory (for example, set permission to <code class="inline-code">750</code> instead of the default <code class="inline-code">755</code>)</li>
+</ul>
+</li>
+<li>Remove unnecessary users and their access promptly</li>
+<li>Always use strong passwords
+<ul>
+<li>You can enforce password complexity and password history policies using PAM for your users</li>
+</ul>
+</li>
+<li>Eliminate risk of brute-forcing on the exposed system by:
+<ul>
+<li>Using more secure SSH authentication, such as SSH RSA Keys instead of username + password</li>
+<li>Installing and configuring <code class="inline-code">fail2ban</code> (see <a data-from-md="" title="https://github.com/fail2ban/fail2ban" href="https://github.com/fail2ban/fail2ban">fail2ban.org</a>)</li>
+</ul>
+</li>
+</ul>
 </div></div>
 					</body>
 				</html>
