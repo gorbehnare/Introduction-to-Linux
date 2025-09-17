@@ -655,7 +655,9 @@ Approximate round trip times in milli-seconds:
 <p>If the service is started and is <code class="inline-code">active</code>, you can proceed to the next step. If you do not have the <code class="inline-code">ssh</code> server installed, you may receive an error about the service unit not existing. Use this procedure to install the service in your Linux VM:</p>
 <div class="joplin-editable"><pre class="joplin-source" data-joplin-language="bash" data-joplin-source-open="```bash
 " data-joplin-source-close="
-```">sudo apt install openssh-server 
+```">sudo apt update
+# this will update the local database of latest available software from the repositories on the Internet
+sudo apt install openssh-server 
 # Wait for the installation to complete
 # The following will configure the ssh server to start automatically on startup
 sudo systemctl enable ssh
@@ -664,7 +666,9 @@ sudo service ssh start
 # check the status again to see if the service is active
 sudo service ssh status
 # If you have UFW firewall installed on your system, you also need to open port 22
-sudo ufw allow 22</pre><pre class="hljs"><code><span class="hljs-built_in">sudo</span> apt install openssh-server 
+sudo ufw allow 22</pre><pre class="hljs"><code><span class="hljs-built_in">sudo</span> apt update
+<span class="hljs-comment"># this will update the local database of latest available software from the repositories on the Internet</span>
+<span class="hljs-built_in">sudo</span> apt install openssh-server 
 <span class="hljs-comment"># Wait for the installation to complete</span>
 <span class="hljs-comment"># The following will configure the ssh server to start automatically on startup</span>
 <span class="hljs-built_in">sudo</span> systemctl <span class="hljs-built_in">enable</span> ssh
@@ -752,13 +756,13 @@ done</pre><pre class="hljs"><code><span class="hljs-built_in">mkdir</span> lab2
 <ol>
 <li>Create an <code class="inline-code">ls</code> command to only display filenames that start with the letter <code class="inline-code">a</code>, and are up to 3 characters long (any letters and numbers). Sample output:</li>
 </ol>
-<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="bash" data-joplin-source-open="```bash
 " data-joplin-source-close="
 ```">    a a12 a1b a21 a2a a3 a33 a3c aa2 aab ab1 aba ac ac3 acc
     a1 a13 a1c a22 a2b a31 a3a aa aa3 aac ab2 abb ac1 aca
-    a11 a1a a2 a23 a2c a32 a3b aa1 aaa ab ab3 abc ac2 acb</pre><pre class="hljs"><code>    a a12 a1b a21 a2a <span class="hljs-built_in">a3</span> a33 a3c aa2 aab ab1 aba ac ac3 acc
-    <span class="hljs-built_in">a1</span> a13 a1c a22 a2b a31 a3a aa aa3 aac ab2 abb ac1 aca
-    a11 a1a <span class="hljs-built_in">a2</span> a23 a2c a32 a3b aa1 aaa ab ab3 abc ac2 acb</code></pre></div>
+    a11 a1a a2 a23 a2c a32 a3b aa1 aaa ab ab3 abc ac2 acb</pre><pre class="hljs"><code>    a a12 a1b a21 a2a a3 a33 a3c aa2 aab ab1 aba ac ac3 acc
+    a1 a13 a1c a22 a2b a31 a3a aa aa3 aac ab2 abb ac1 aca
+    a11 a1a a2 a23 a2c a32 a3b aa1 aaa ab ab3 abc ac2 acb</code></pre></div>
 <ol start="2">
 <li>Create an <code class="inline-code">ls</code> command to only display filenames that have only 2 letters in them (not numbers)</li>
 <li>Create an <code class="inline-code">ls</code> command to only display filenames that are 3-digit numbers (no letters).</li>
