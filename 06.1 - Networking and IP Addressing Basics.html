@@ -623,12 +623,13 @@ pre.mermaid[data-processed=true] { white-space: unset; }
 <ul>
 <li>The mask is set to <code class="inline-code">1</code>&apos;s for the network bits and <code class="inline-code">0</code>&apos;s for the host bits. Systems will use the logical <code class="inline-code">AND</code> operation to extract the <strong>network address</strong> from the 32-bit IP address.</li>
 <li>In the example above, the subnet mask is <code class="inline-code">255.255.255.0</code>, meaning that the first 24 bits are the <strong>network address</strong>, and the last 8 bits are the <strong>host addresses</strong>. This can also be written as <code class="inline-code">/24</code>, so the IP address and mask written in <strong>prefix format</strong> is: <code class="inline-code">192.168.56.1/24</code>.</li>
-<li>When a router or any system needs to extract the network address from any IP address in the example above, the IP is <code class="inline-code">AND</code> with the subnet mask: <code class="inline-code">192.168.56.153 AND 255.255.255.0 = 192.168.56.0</code>. Therefore, my network address and prefix for the above example is <code class="inline-code">192.168.56.0/24</code></li>
+<li>When a router or any system needs to extract the network address from any IP address in the example above, the IP is <code class="inline-code">AND</code> with the subnet mask: <code class="inline-code">192.168.56.153 AND 255.255.255.0 = 192.168.56.0 (Convert all decimal numbers to binary to observe the operation)</code>. Therefore, my network address and prefix for the above example is <code class="inline-code">192.168.56.0/24</code></li>
 <li><strong>Network addresses</strong> always end with all host bits set to <code class="inline-code">0</code>. The network address is reserved, and you cannot assign it to a host (according to RFC standards and conventions).</li>
 </ul>
 </li>
 <li>The <strong>broadcast address</strong> refers to ALL hosts inside a network.
 <ul>
+<li>Anything sent to the broadcast address will be transmitted to all hosts on that network</li>
 <li>By RFC/Convention, the Broadcast address is when all host bits are set to <code class="inline-code">1</code>s</li>
 <li>A broadcast address from a network is also reserved and cannot be given to a host.</li>
 <li>In my example network, the broadcast address is <code class="inline-code">192.168.56.255</code></li>
