@@ -9,11 +9,10 @@ Table of Content:
 - [04 - CLI Basics](./04%20-%20CLI%20Basics.html)
 - [05 - Exploring Hardware](./05%20-%20Exploring%20Hardware.html)
 - [06 - NIC Configuration](./06%20-%20NIC%20Configuration.html)
-   - [06.1 - Networking and IP Addressing Basics](./06.1%20-%20Networking%20and%20IP%20Addressing%20Basics.html)
 - [07 - Software Management](./07%20-%20Software%20Management.html)
 - [08 - User Accounts and Groups](./08%20-%20Users%20and%20Groups.html)
 - [09 - File Permissions and Notations](./09%20-%20File%20Permissions%20and%20Notations.html)
-- 10 - Linux Admin Utilities and (Legacy) System Run Levels
+- [10 - System Admin Utilities](./10%20-%20System%20Admin%20Utilities.html)
 - 11 - Popular Linux Software Packaging Formats
 - 12 - Scripting
 - 13 - Desktop Environment and GUI
