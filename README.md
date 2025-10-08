@@ -13,9 +13,10 @@ Table of Content:
 - [08 - User Accounts and Groups](./08%20-%20Users%20and%20Groups.html)
 - [09 - File Permissions and Notations](./09%20-%20File%20Permissions%20and%20Notations.html)
 - [10 - System Admin Utilities](./10%20-%20System%20Admin%20Utilities.html)
-- 11 - Popular Linux Software Packaging Formats
-- 12 - Scripting
-- 13 - Desktop Environment and GUI
+- [11 - System Initialization](./11%20-%20System%20Initialization)
+- 12 - Popular Linux Software Packaging Formats
+- 13 - Scripting
+- 14 - Desktop Environment and GUI
 
 Assignments:
 - [Assignment 1 - Installing Linux](Assignments/Assignment%201%20-%20Installing%20Linux.html)
