@@ -14,7 +14,7 @@ Table of Content:
 - [09 - File Permissions and Notations](./09%20-%20File%20Permissions%20and%20Notations.html)
 - [10 - System Admin Utilities](./10%20-%20System%20Admin%20Utilities.html)
 - [11 - System Initialization](./11%20-%20System%20Initialization)
-- 12 - Popular Linux Software Packaging Formats
+- [12 - Linux Software Packaging Formats](./12%20-%20Linux%20Software%20Packaging%20Formats.html)
 - 13 - Scripting
 - 14 - Desktop Environment and GUI
 
