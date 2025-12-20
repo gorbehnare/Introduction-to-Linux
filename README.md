@@ -16,7 +16,7 @@ Table of Content:
 - [11 - System Initialization](./11%20-%20System%20Initialization)
 - [12 - Linux Software Packaging Formats](./12%20-%20Linux%20Software%20Packaging%20Formats.html)
 - [13 - Bash Scripting](./13%20-%20Bash%20Scripting.html)
-- 14 - Desktop Environment and GUI
+- [14 - Desktop Environment and GUI](14%20-%20Desktop%20Environments%20and%20GUI.html)
 
 Assignments:
 - [Assignment 1 - Installing Linux](Assignments/Assignment%201%20-%20Installing%20Linux.html)
