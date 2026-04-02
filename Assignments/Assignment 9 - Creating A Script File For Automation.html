@@ -1135,19 +1135,21 @@ read username</pre><pre class="hljs"><code><span class="hljs-built_in">echo</spa
 " data-joplin-source-close="
 ```"># Did adduser work? What to do if there is an error?
 # Gives exit status 1 if adduser failed or generated an error
-if [ $? -eq 0 ]
+statuscheck=$?
+if [ $statuscheck -eq 0 ]
    then
       echo &quot;Linux User account for ${FirstName} $LastName was created successfully.&quot;
    else
-      echo &apos;!!! User account was not added. AddUser Returned exit status &apos;$?&apos; !!!&apos;
+      echo &apos;!!! User account was not added. AddUser Returned exit status &apos;$statuscheck&apos; !!!&apos;
       exit 1
   fi</pre><pre class="hljs"><code><span class="hljs-comment"># Did adduser work? What to do if there is an error?</span>
 <span class="hljs-comment"># Gives exit status 1 if adduser failed or generated an error</span>
-<span class="hljs-keyword">if</span> [ $? -eq 0 ]
+statuscheck=$?
+<span class="hljs-keyword">if</span> [ <span class="hljs-variable">$statuscheck</span> -eq 0 ]
    <span class="hljs-keyword">then</span>
       <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Linux User account for <span class="hljs-variable">${FirstName}</span> <span class="hljs-variable">$LastName</span> was created successfully.&quot;</span>
    <span class="hljs-keyword">else</span>
-      <span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;!!! User account was not added. AddUser Returned exit status &apos;</span>$?<span class="hljs-string">&apos; !!!&apos;</span>
+      <span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;!!! User account was not added. AddUser Returned exit status &apos;</span><span class="hljs-variable">$statuscheck</span><span class="hljs-string">&apos; !!!&apos;</span>
       <span class="hljs-built_in">exit</span> 1
   <span class="hljs-keyword">fi</span></code></pre></div>
 <h2 id="step-3-generate-a-random-password">Step 3: Generate a random password</h2>
@@ -1191,20 +1193,22 @@ echo &quot;Make sure to protect and guard your private key and passphrase at all
 <div class="joplin-editable"><pre class="joplin-source" data-joplin-language="bash" data-joplin-source-open="```bash
 " data-joplin-source-close="
 ```"># Did ssh-keygen work? If it fails, delete the user account and home directory, and give the exit Status 2
-if [ $? -eq 0 ]
+statuscheck=$?
+if [ $statuscheck -eq 0 ]
    then
       echo &quot;RSA key was generated successfully&quot;
    else
-      echo &apos;!!!!!! RSA Key was not created, ssh-keygen exit status &apos;$?&apos; !!!!!!&apos;
+      echo &apos;!!!!!! RSA Key was not created, ssh-keygen exit status &apos;$statuscheck&apos; !!!!!!&apos;
       echo &quot;Undoing the changes made to the system so far&quot;
       deluser $username &amp;&amp; rm -r /home/$username
       exit 2
 fi</pre><pre class="hljs"><code><span class="hljs-comment"># Did ssh-keygen work? If it fails, delete the user account and home directory, and give the exit Status 2</span>
-<span class="hljs-keyword">if</span> [ $? -eq 0 ]
+statuscheck=$?
+<span class="hljs-keyword">if</span> [ <span class="hljs-variable">$statuscheck</span> -eq 0 ]
    <span class="hljs-keyword">then</span>
       <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;RSA key was generated successfully&quot;</span>
    <span class="hljs-keyword">else</span>
-      <span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;!!!!!! RSA Key was not created, ssh-keygen exit status &apos;</span>$?<span class="hljs-string">&apos; !!!!!!&apos;</span>
+      <span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;!!!!!! RSA Key was not created, ssh-keygen exit status &apos;</span><span class="hljs-variable">$statuscheck</span><span class="hljs-string">&apos; !!!!!!&apos;</span>
       <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Undoing the changes made to the system so far&quot;</span>
       deluser <span class="hljs-variable">$username</span> &amp;&amp; <span class="hljs-built_in">rm</span> -r /home/<span class="hljs-variable">$username</span>
       <span class="hljs-built_in">exit</span> 2
